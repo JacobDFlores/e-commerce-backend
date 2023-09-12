@@ -22,7 +22,7 @@ Product.belongsToMany(Tag, {
   },
 });
 // Tags belongToMany Products (through ProductTag) 
-Traveller.belongsToMany(Location, {
+Tag.belongsToMany(Product, {
   // Define the third table needed to store the foreign keys
   through: {
     model: ProductTag,
